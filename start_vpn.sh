@@ -20,8 +20,8 @@ kill_switch() {
 	else
 		groupadd vpn 
 	fi
-	iptables  -A OUTPUT -m owner --gid-owner vpn -j ACCEPT
-	ip6tables -A OUTPUT -m owner --gid-owner vpn -j ACCEPT 2>/dev/null 
+	#iptables  -A OUTPUT -m owner --gid-owner vpn -j ACCEPT
+	#ip6tables -A OUTPUT -m owner --gid-owner vpn -j ACCEPT 2>/dev/null 
 }
 
 setup_nordvpn() {
